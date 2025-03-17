@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 1 Landing page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style type="text/css">
+        body {
+        background: linear-gradient(50deg, red, rgb(244, 244, 96), pink, rgb(122, 68, 127) );
+        background-size: 400% 400%;
+        animation: moveBg 10s infinite linear;
+    }
+
+    /* Animation for moving background */
+    @keyframes moveBg {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        25% {
+            background-position: 50% 100%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        75% {
+            background-position: 50% 0%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    </style>
+
+
+</head>
+<body class="container-fluid" >
+
+    <!--HEADER-->
+    <header class="bg-black text-white text-center p-2 m-2">
+        <h2>Book showcase : Book 1 details</h2>
+        <div class="d-flex justify-content-end me-3">
+        <a href=" "> Home</a>
+        </div>
+    </header>
+
+
+
+    <!-- CODING MAIN -->
+
+    <main class="container-fluid bg-white text-dark p-5  w-75 border rounded-3 ">
+    <p class="fs-4 fw-bold">Book 1 : The subtle art of not giving a f*ck</p>
+    <div><img src="public/image/Book1.png" alt="" class="img-fluid" style="width:200px;">
+    </div>
+
+    <details>
+        <summary class="fw-bold fs-5">Genre</summary>
+        <li>Self-help</li>
+        <li>Motivational</li>
+        <li>Psychology</li>
+    </details>
+
+    <details>
+        <summary class="fw-bold fs-5">Index page</summary>
+        <li>Introduction</li>
+        <li>Chapter 1: Don't Try</li>
+        <li>Chapter 2: Happiness Is a Problem</li>
+        <li>Chapter 3: You Are Not Special</li>
+        <li>Chapter 4: The Value of Suffering</li>
+        
+    </details>
+
+
+    <details>
+        <summary class="fw-bold fs-5">Author</summary>
+         Mark Manson
+    </details>
+
+
+    <details>
+        <summary class="fw-bold fs-5">Overview</summary>
+     <p>
+            The book challenges traditional self-help advice, emphasizing the importance of embracing struggles and 
+            prioritizing what truly matters , Through humor and real-life insights.
+     </p>
+
+    
+    </details>
+
+
+    <details>
+        <summary class="fw-bold fs-5">Relevance</summary>
+        <p>
+         The book helps readers focus on what truly matters, embrace struggles,
+         and live a more meaningful life.
+         </p>
+    </details>
+
+
+    <details>
+        <summary class="fw-bold fs-5">Purchase links</summary>
+       <li>
+        <a href="https://www.amazon.in/dp/0062641549" target="_blank">Amazon</a>
+       </li>
+
+       <li>
+        <a href="https://www.flipkart.com/subtle-art-not-giving-f-ck-embracing-matters-guide-letting-go/p/itmc9e76889e7687?pid=9780062641540&q=the+subtle+art&store=bks&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_1_10_sc_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_10_sc_na_na&fm=organic&iid=14c93ba9-405f-4386-b2ba-1dbd7ca9f829.9780062641540.SEARCH&ppt=hp&ppn=homepage&ssid=b2ekcwbz8g0000001742225674303&qH=e9bf74c9c0f26b9d" target="_blank">Flipkart</a>
+
+       </li>
+    </details>
+
+
+    <h3 class="mt-5">Feedback Form</h3>
+
+    <div class="d-flex justify-content-center">
+        <form class="border p-4 border-4 rounded-5 w-50">
+            <div class="form-group m-2">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" required  id="name" name="name">
+            </div>
+            <div class="form-group m-2">
+                <label for="feedback">Feedback</label>
+                <textarea name="feedback" required  id="feedback" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary m-2 w-100">Submit Feedback</button>
+        </form>
+    </div>
+
+
+
+    </main>
+
+
+
+    <footer class="bg-black text-white  m-3 p-2 d-flex justify-content-center">
+        <span class="bi bi-c-circle">2025 Book Showcase | All rights Reserved</span>
+    </footer>
+
+
+    
+
+
+
+</body>
+</html>
