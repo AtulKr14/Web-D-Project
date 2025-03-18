@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 3 Landing Page</title>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <style type="text/css">
+        body {
+        background: linear-gradient(50deg, blue, rgb(244, 244, 96), orange, rgb(122, 68, 127) );
+        background-size: 400% 400%;
+        animation: moveBg 5s infinite linear;
+    }
+
+    @keyframes moveBg {
+        0% { background-position: 0% 50%; }
+        25% { background-position: 50% 100%; }
+        50% { background-position: 100% 50%; }
+        75% { background-position: 50% 0%; }
+        100% { background-position: 0% 50%; }
+    }
+    </style>
+</head>
+<body class="container-fluid">
+
+    <header class="bg-black text-white text-center p-2 m-2">
+        <h2>Book Showcase: Book 3 Details</h2>
+        <div class="d-flex justify-content-end me-3">
+            <a href=" ">Home</a>
+        </div>
+    </header>
+
+    <main class="container-fluid bg-white text-dark p-5 w-75 border rounded-3">
+        <p class="fs-4 fw-bold">Book 3: Rich Dad Poor Dad</p>
+        <div><img src="public/image/Book3.png" alt="" class="img-fluid" style="width:200px;"></div>
+
+        <details>
+            <summary class="fw-bold fs-5">Genre</summary>
+            <li>Personal Finance</li>
+            <li>Self-help</li>
+            <li>Entrepreneurship</li>
+        </details>
+
+        <details>
+            <summary class="fw-bold fs-5">Index Page</summary>
+            <li>Introduction</li>
+            <li>Chapter 1: Rich Dad, Poor Dad</li>
+            <li>Chapter 2: The Rich Don't Work for Money</li>
+            <li>Chapter 3: Why Teach Financial Literacy?</li>
+            <li>Chapter 4: Mind Your Own Business</li>
+        </details>
+
+        <details>
+            <summary class="fw-bold fs-5">Author</summary>
+            Robert T. Kiyosaki
+        </details>
+
+        <details>
+            <summary class="fw-bold fs-5">Overview</summary>
+            <p>
+                This book challenges conventional financial wisdom by contrasting the mindset of the wealthy
+                versus the middle class. It teaches readers about financial independence, investing, and growing wealth.
+            </p>
+        </details>
+
+        <details>
+            <summary class="fw-bold fs-5">Relevance</summary>
+            <p>
+                The book is crucial for anyone looking to improve their financial literacy, build wealth, and achieve financial independence.
+            </p>
+        </details>
+
+        <details>
+            <summary class="fw-bold fs-5">Purchase Links</summary>
+            <li><a href="https://www.amazon.in/dp/1612681131" target="_blank">Amazon</a>
+            </li>
+
+            <li><a href="https://www.flipkart.com/rich-dad-poor-dad/p/itmfc599jmcfhhwm?pid=9781612680194" target="_blank">Flipkart</a></li>
+        </details>
+
+        <h3 class="mt-5">Feedback Form</h3>
+        <div class="d-flex justify-content-center">
+            <form class="border p-4 border-4 rounded-5 w-50">
+                <div class="form-group m-2">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" required id="name" name="name">
+                </div>
+                <div class="form-group m-2">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" required id="feedback" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary m-2 w-100">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white m-3 p-2 d-flex justify-content-center">
+        <span class="bi bi-c-circle">2025 Book Showcase | All Rights Reserved</span>
+    </footer>
+</body>
+</html>
