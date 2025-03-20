@@ -83,20 +83,29 @@
             <li><a href="https://www.flipkart.com/rich-dad-poor-dad/p/itmfc599jmcfhhwm?pid=9781612680194" target="_blank">Flipkart</a></li>
         </details>
 
-        <h3>Feedback Form</h3>
-        <div class="d-flex justify-content-center">
-            <form class="border p-4 border-4 rounded-5 w-50">
-                <div class="form-group m-2 overflow-auto">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" required name="name">
-                </div>
-                <div class="form-group m-2 overflow-auto">
-                    <label for="feedback">Feedback</label>
-                    <textarea name="feedback" id="feedback" required class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary m-2 w-100 overflow-auto">Submit Feedback</button>
-            </form>
+        <div class="card mt-4 p-4 shadow-lg feedback-form">
+            <h4 class="text-center">Feedback Form</h4>
+            <div class="card-body">
+                <form id="feedbackForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-control mb-2" required>
+        
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" class="form-control p-2" required></textarea>
+        
+                    <button type="submit" class="btn btn-primary mt-3 w-100">Submit Feedback</button>
+                </form>
+            </div>
         </div>
+        
+       
+        <script>
+            document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                alert("Feedback Submitted Successfully!"); 
+            });
+    
+        </script>
 
         
     </main>
